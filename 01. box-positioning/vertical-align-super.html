@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Vertical align</title>
+    <link rel="stylesheet" href="../reset.css"/>
+    <style>
+      .parent {
+        font-size: 48pt;
+        border: 1px solid #000;
+        float: left;
+      }
+      .child {
+        font-size: 12pt;
+        vertical-align: baseline;
+      }
+      .super {
+        font-size: 12px;
+        vertical-align: super;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <span class="child">child
+        <span class="super">sup
+          <span class="super">sup</span>
+        </span>here
+      </span>
+      <span class="super">sup-super</span>
+    </div>
+    <div class="parent">aA</div>
+  </body>
+</html>

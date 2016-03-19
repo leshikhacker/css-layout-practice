@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Vertical align middle</title>
+    <link rel="stylesheet" href="../reset.css">
+    <style>
+      .container {
+        text-align: center;
+        overflow: auto;
+        height: 120px;
+      }
+
+      .container:after,
+      .block {
+        display: inline-block;
+        vertical-align: middle;
+      }
+
+      .container:after {
+        content: '';
+        height: 100%;
+        margin-left: -.25em; /* To ofset spacing. May vary by font.*/
+        width: 10px; /* To show the inserted pseudo element */
+        background-color: lightgreen; /* To show the inserted pseudo element */
+      }
+
+      .block {
+        max-width: 99%; /* Prevents issue with long
+        content causes the content block to be pushed to the top */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container blue">
+      <div class="block red">Centered</div>
+    </div>
+  </body>
+</html>

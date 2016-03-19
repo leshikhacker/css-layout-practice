@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Float overflow</title>
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="../colors.css">
+    <style>
+      .float {
+        float: left;
+        height: 500px;
+      }
+      .para {
+        margin: 0;
+      }
+      .new-context {
+        margin: 0;
+        overflow: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="para blue">before</div>
+    <div class="float red">The float</div>
+    <div class="new-context green">new formatting context<br>foo bar</div>
+    <div class="para orange">after</div>
+  </body>
+</html>

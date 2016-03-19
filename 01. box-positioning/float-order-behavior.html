@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Float order behavior</title>
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="../colors.css">
+    <style>
+      body {
+        font-size: 100px;
+      }
+      .left {
+        float: left;
+      }
+      .right {
+        float: right;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="left red">A</div>
+    <div class="right blue">B</div>
+    <div class="left red">C</div>
+    <div class="right blue">D</div>
+    <div class="left red">E</div>
+    <div class="right blue">F</div>
+  </body>
+</html>

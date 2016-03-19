@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Float boxes</title>
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="../colors.css">
+    <style>
+      .float {
+        float: left;
+        height: 500px;
+      }
+      .para {
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="para blue">Text inside block-level box on a line box before the float</div>
+    <div class="para green">Text before the float
+      <div class="float red">The float</div>
+      Text after float
+    </div>
+    <div class="para orange">Text inside block-level box on a line box before the float</div>
+
+  </body>
+</html>

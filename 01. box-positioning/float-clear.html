@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Float clear</title>
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="../colors.css">
+    <style>
+      .left, .right {
+        width: 35%;
+        height: 40px;
+      }
+      .left {
+        float: left;
+      }
+      .right {
+        float: right;
+      }
+      .clear-left {
+        clear: left;
+      }
+      .clear-both {
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="left blue">A</div>
+    <div class="left blue">B</div>
+    <div class="right red">C</div>
+    <div class="right red">D</div>
+    <div class="clear-left orange">Clear left only. Clear left only. Clear left only. Clear left only. Clear left only. Clear left only.</div>
+    <div class="left blue">E</div>
+    <div class="left blue">F</div>
+    <div class="right red">G</div>
+    <div class="right red">H</div>
+    <div class="clear-both violet">Clear both. Clear both. Clear both. Clear both. Clear both. Clear both. Clear both.</div>
+  </body>
+</html>

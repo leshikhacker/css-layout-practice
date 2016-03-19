@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Inlene level box generation issue explanation 2</title>
+    <link rel="stylesheet" href="../reset.css">
+    <style>
+      .parent {
+        height: 60px;
+        font-family: monospace;
+      }
+      .parent2 {
+        height: 60px;
+        font-family: monospace;
+        font-size: 40px;
+      }
+      .large {
+        font-size: 40px;
+      }
+      .child {
+        font-size: medium;
+        vertical-align: middle;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent blue">
+      x
+      <span class="child green">&lt;</span>
+      <span class="large green">&lt;</span>
+    </div>
+    <div class="parent2 blue">
+      x
+      <span class="child green">&lt;</span>
+      <span class="large green">&lt;</span>
+    </div>
+  </body>
+</html>

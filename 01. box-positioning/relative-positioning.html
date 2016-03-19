@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Relative positioning</title>
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="../colors.css">
+    <style>
+      .float {
+        float: left;
+      }
+      .foo {
+        padding-top: 10px;
+      }
+      .bar {
+        position: relative;
+        top: -20px;
+        left: 10px;
+        width: 30%;
+      }
+      .baz{
+        width: 40%;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div class="float red">float</div>
+      <div class="foo blue">foo</div>
+      <div class="bar green">bar</div>
+      <div class="baz orange">baz</div>
+    </div>
+  </body>
+</html>
